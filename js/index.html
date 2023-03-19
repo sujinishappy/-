@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 4000px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        #top {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: 25px;
+            padding: 10px 20px;
+            shape-outside:ellipse(20 20 20) ;
+            border-radius: 30px;
+        }
+        #top:hover{
+            color: rgb(255, 255, 255);
+            background-color: darkgrey;
+            border-color: darkgrey;
+            cursor: pointer;
+        }
+        header>ul{
+                display: flex;
+                justify-content: center;
+                margin:20px 0px;
+                background-color: #098;
+            }
+            header>ul>li{
+                list-style: none;
+                padding: 10px 20px;
+                font-size: 20px;
+                margin: 20px;
+                border-bottom: solid 2px white;
+            }
+            header>ul>li:hover{
+                color:rgb(130, 148, 155);
+                border-bottom: solid 2px #098;
+            }
+            header{
+                text-align: center;
+                color: rgb(0, 0, 0);
+                padding: 0px;
+            }
+    </style>
+</head>
+<body>
+    <button id="top">top</button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top:0,
+                behavior: 'smooth'
+            });
+        }
+        var button = document.getElementById('top');
+        button.addEventListener('click', scrollToTop)
+    </script>
+    <header>
+        <ul>
+            <li><a href="index.html" target="_blank">HOME</a></li>
+            <li><a href="index.html" target="_blank">MAIN</a></li>
+            <li><a href="index.html" target="_blank">SUB</a></li>
+            <li><a href="index.html" target="_blank">ABOUT</a></li>
+        </ul>
+    </header>
+    <h3>
+        버킷 리스트
+    </h3>
+        <img src="https://post-phinf.pstatic.net/MjAxOTAzMjFfMTIw/MDAxNTUzMTI3NjgzOTk0.ewtv5xpWQ7noeErzMY-VWsr8fQloGXKj462VDEcums4g.KI_4tUdjNj9juLSBLarfdx28KAwCpLm8LDZg8QiDhj4g.JPEG/5.jpg?type=w1200">
+        <h4>01.파묵 칼레</h4>
+        <img src="https://image.newdaily.co.kr/site/data/img/2015/03/11/2015031100171_0.jpg">
+        <h4>02.열기구</h4>
+        <img src="https://admin.itsmorefuninthephilippines.co.kr/uploads/Destination_Images/cebu_main2019522_165952.jpg">
+        <h4>03.고래상어 수영</h4>
+        <img src="https://a.cdn-hotels.com/gdcs/production100/d764/4a3f3c50-68ce-11e8-bbf2-0242ac110009.jpg?impolicy=fcrop&w=800&h=533&q=medium">
+        <h4>04.베네치아</h4>
+    
+</body>
+</html>
